@@ -6,7 +6,6 @@ def print_abacus(value):
 		value = value - (div * (10**x))
 		x = x - 1
 		print padrao[:11-div] + '   ' + padrao[-div-1:]
-		
 	
 print "Abacus showing 0:"
 print_abacus(0)
