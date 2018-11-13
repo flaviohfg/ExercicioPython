@@ -1,11 +1,10 @@
 def print_abacus(value):
-	padrao = '|00000*****|'
 	x = 9
 	while x >= 0:
 		div = value / (10 ** x)
 		value = value - (div * (10**x))
 		x = x - 1
-		print padrao[:11-div] + '   ' + padrao[-div-1:]
+		print '|00000*****|'[:11-div] + '   ' + '|00000*****|'[-div-1:]
 	
 print "Abacus showing 0:"
 print_abacus(0)
